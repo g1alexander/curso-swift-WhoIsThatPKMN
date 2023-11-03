@@ -22,7 +22,7 @@ struct PokemonManager {
     
     private func performRequest(with urlString: String){
 //        1. create/get url
-        if let url = URL(string: urlApi) {
+        if let url = URL(string: urlString) {
 //            2. create the urlsession
             let session = URLSession(configuration: .default)
             

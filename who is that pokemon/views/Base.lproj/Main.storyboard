@@ -133,7 +133,7 @@
                         <outletCollection property="answerButtons" destination="O95-M6-Fow" collectionClass="NSMutableArray" id="GZT-s9-q3Y"/>
                         <outletCollection property="answerButtons" destination="s8P-Tu-ouw" collectionClass="NSMutableArray" id="AYc-vC-bSs"/>
                         <outletCollection property="answerButtons" destination="W7F-7Q-PUE" collectionClass="NSMutableArray" id="w7u-jO-3mY"/>
-                        <segue destination="For-mf-rOd" kind="presentation" identifier="goToResults" modalPresentationStyle="fullScreen" id="rRf-4W-uwv"/>
+                        <segue destination="For-mf-rOd" kind="presentation" identifier="goToResults" modalPresentationStyle="fullScreen" id="816-I8-7LD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -188,6 +188,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Jugar de nuevo">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="21"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="playAgain:" destination="For-mf-rOd" eventType="touchUpInside" id="CFl-a2-c6r"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -203,7 +206,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Oj2-6v-hZC"/>
                     <connections>
-                        <outlet property="pokemonLabel" destination="bbB-gi-cHs" id="Mj5-qa-28y"/>
+                        <outlet property="pokemonImage" destination="9Ig-zH-xU7" id="m3M-Ft-GBf"/>
+                        <outlet property="pokemonLabel" destination="bbB-gi-cHs" id="Rfi-Ql-rDJ"/>
+                        <outlet property="scoreLabel" destination="zmE-qW-a4E" id="eBQ-r6-ayW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jaT-i2-BTY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
